@@ -33,7 +33,7 @@ const without = (inputArray, excludedElements) => {
     for (let j = 0; j < inputArray.length; j++) {
       if (inputArray[j] !== excludedElements[i]) {
         output.push(inputArray[j]);
-      } 
+      }
     }
   }
   return output;
