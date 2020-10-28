@@ -15,16 +15,16 @@ const countLetters = (sentence) => {
     }
   }
 
-  for (count in letterCounter) {
-    for (letter in sentence) {
+  for (const count in letterCounter) {
+    for (const letter in sentence) {
       if (sentence[letter] === count) {
         letterCounter[count]++;
       }
     }
   }
   return letterCounter;
-}
+};
 
-// console.log(countLetters("hello"));
-// console.log(countLetters("LHL"));
-// console.log(countLetters("lighthouse in the house"));
+console.log(countLetters("hello"));
+console.log(countLetters("LHL"));
+console.log(countLetters("lighthouse in the house"));
