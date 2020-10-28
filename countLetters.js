@@ -7,24 +7,17 @@ const assertEqual = function (actual, expected) {
 };
 
 const countLetters = (sentence) => {
-  const letterCounter = {};
+  let result = {};
 
-  for (const letter in sentence) {
-    if (sentence[letter] !== ' ') {
-      letterCounter[sentence[letter]] = 0;
+  for (const letter of sentence) {
+    if (result[letter]) {
+      result[letter]++;
+    } else {
+      result[letter] = 1;
     }
   }
-
-  for (const count in letterCounter) {
-    for (const letter in sentence) {
-      if (sentence[letter] === count) {
-        letterCounter[count]++;
-      }
-    }
-  }
-  return letterCounter;
+  return result;
 };
 
 // console.log(countLetters("hello"));
 // console.log(countLetters("LHL"));
-// console.log(countLetters("lighthouse in the house"));
