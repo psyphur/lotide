@@ -31,20 +31,13 @@ const letterPositions = function(sentence) {
   
   for (const letter in sentence) {
     if (sentence[letter] !== ' ') {
-      results[sentence[letter]] = [];
-    }
-  }
-
-  for (const letterIndex in sentence) {
-    for (const resultLetter in results) {
-      if (sentence[letterIndex] === resultLetter) {
-        results[resultLetter].push(Number(letterIndex));
+      if (results[sentence[letter]]) {
+        results[sentence[letter]].push(letter);
+      } else {
+        results[sentence[letter]] = [letter];
       }
     }
   }
   return results;
 };
 
-// console.log(letterPositions("hello there"));
-// console.log(letterPositions("lighthouse in the house"));
-// assertArraysEqual(letterPositions("hello").e, [1]);
