@@ -25,6 +25,6 @@ const countLetters = (sentence) => {
   return letterCounter;
 };
 
-console.log(countLetters("hello"));
-console.log(countLetters("LHL"));
-console.log(countLetters("lighthouse in the house"));
+// console.log(countLetters("hello"));
+// console.log(countLetters("LHL"));
+// console.log(countLetters("lighthouse in the house"));
