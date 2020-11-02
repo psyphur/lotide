@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@psyphur/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "@psyphur mini Lodash clone",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/psyphur/lotide.git"
   },
-  "author": "",
+  "author": "Shaun",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/psyphur/lotide/issues"
