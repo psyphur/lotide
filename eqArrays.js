@@ -14,7 +14,7 @@ const eqArrays = (firstArray, secondArray) => {
       }
     }
   } else {
-    return "Arrays to compare must be of the same size";
+    isEqual = false;
   }
 
   return isEqual;
