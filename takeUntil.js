@@ -1,31 +1,3 @@
-const eqArrays = (firstArray, secondArray) => {
-
-  let isEqual = true;
-
-  if (firstArray.length === secondArray.length) {
-    for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] === secondArray[i]) {
-        isEqual = true;
-      } else {
-        isEqual = false;
-        break;
-      }
-    }
-  } else {
-    return "Arrays to compare must be of the same size";
-  }
-
-  return isEqual;
-};
-
-const assertArraysEqual = (firstArray, secondArray) => {
-  if (eqArrays(firstArray, secondArray)) {
-    console.log("Arrays are equal");
-  } else {
-    console.log("Arrays are not equal");
-  }
-};
-
 const takeUntil = (array, callback) => {
   const results = [];
 
@@ -39,6 +11,7 @@ const takeUntil = (array, callback) => {
   return results;
 };
 
+module.exports = takeUntil;
 // const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 // const results1 = takeUntil(data1, x => x < 0);
 // console.log(results1);

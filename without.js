@@ -1,31 +1,3 @@
-const eqArrays = (firstArray, secondArray) => {
-
-  let isEqual = true;
-
-  if (firstArray.length === secondArray.length) {
-    for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] === secondArray[i]) {
-        isEqual = true;
-      } else {
-        isEqual = false;
-        break;
-      }
-    }
-  } else {
-    return "Arrays to compare must be of the same size";
-  }
-
-  return isEqual;
-};
-
-const assertArraysEqual = (firstArray, secondArray) => {
-  if (eqArrays(firstArray, secondArray)) {
-    console.log("Arrays are equal");
-  } else {
-    console.log("Arrays are not equal");
-  }
-};
-
 const without = (inputArray, excludedElements) => {
   let output = [];
 
@@ -39,6 +11,7 @@ const without = (inputArray, excludedElements) => {
   return output;
 };
 
+module.exports = without;
 // const words = ["hello", "world", "lighthouse"];
 // console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
 // // Make sure the original array was not altered by the without function
